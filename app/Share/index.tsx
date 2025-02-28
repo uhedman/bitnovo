@@ -146,9 +146,9 @@ export default function ShareScreen({ route, navigation }: ShareScreenProps) {
               { currency === 'USD'
               ? '$ ' + amount
               : currency === 'GBP'
-              ? '£' + amount
+              ? '£ ' + amount
               : currency === 'EUR'
-              ? amount + '€'
+              ? amount + ' €'
               : amount}
             </Text>
           </View>
