@@ -158,7 +158,11 @@ export default function ShareScreen({ route, navigation }: ShareScreenProps) {
       
       {/* Link y QR */}
       <View style={styles.linkQrContainer}>
-        <TouchableOpacity style={styles.linkContainer} onLongPress={copyLink}>
+        <TouchableOpacity 
+          style={styles.linkContainer} 
+          onPress={() => ToastAndroid.show('Mantener apretado para copiar', ToastAndroid.SHORT)} 
+          onLongPress={copyLink}
+        >
           {svgLink}
           <Text style={styles.text} ellipsizeMode="tail" numberOfLines={1}>{link}</Text>
         </TouchableOpacity>

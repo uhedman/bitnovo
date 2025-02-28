@@ -33,6 +33,7 @@ const styles = {
 
   /* Common text */
   text: {
+    flexShrink: 1,
     fontSize: 14,
     color: "#002859",
     fontFamily: 'Mulish_400Regular',
